@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Roboto:wght@500&display=swap');
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+dark blue   #143a56
+grey        #606060
+green       #008080
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +22,360 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* --------------------- navbar ------------------------- */
+
+.navv{
+  color:  #606060 !important;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-link{
+  color:  #606060 !important;
+  transition: ease-in-out 2s ease-in-out;
+}
+
+.nav-link:hover{
+  color: #008080 !important;
+}
+
+/* -------------------- homepage ------------------------ */
+
+.dsc-holder{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* -------------------- about page ------------------------ */
+
+.edu{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.edu-h{
+  color: #606060;
+  padding-right: 3%;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+.edu-inner{
+  padding-left: 3%;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.edu-box{
+  padding-bottom: 3%;
+}
+.edu-box-h1{
+  color: #606060;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+.edu-box-h2{
+  color: #008080;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width:580px) and (max-width:767px){
+  .edu{
+    padding-top: 5%;
+    height: 220px;
+  }
+  .edu-h{
+    padding-right: 3%;
+    font-size: 2rem;
+  }
+  .edu-box{
+    padding-bottom: 2%;
+  }
+  .edu-box-h1{
+    font-size: 15px;
+  }
+  .edu-box-h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:579px){
+  .edu{
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .edu-h{
+    padding-right: 0%;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .edu-inner{
+    padding-left: 0%;
+    flex-basis: 100%;
+    margin-bottom: 3%;
+  }
+  .edu-box{
+    padding-bottom: 5%;
+  }
+}
+
+/* ------------------- heading component ---------------- */
+.h{
+  text-align: center;
+}
+.hh1{
+  color:  #143a56;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+}
+
+.hh2{
+  padding-top: 5%;
+  font-family: 'Lato', sans-serif;
+  color:  #606060;
+  font-size: 2rem;
+}
+
+.hh3{
+  font-family: 'Lato', sans-serif;
+  color:  #606060;
+  font-size: 1.2rem;
+}
+
+/* ----------------- card component ------------------- */
+
+.g-card{
+  margin:0px 20px 20px 20px;
+}
+
+.g-card-image{
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: ease-in-out 1s ease;
+}
+.g-card-image:hover{
+  box-shadow: 0px 0px 3px 3px #ccc;
+}
+
+/* ----------------- card info component ------------------- */
+
+.g-card-info{
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.g-card-title{
+  color:  #143a56;
+  font-size: 24px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+.g-card-sub-title{
+  color:  #606060;
+  font-size: 14px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.an{
+  cursor: pointer;
+  margin-top: 1%;
+  margin-right: 3%;
+}
+.ic{
+  font-size: 20px;
+  color:  #606060;
+  transition: ease-in-out 1s ease;
+}
+.ic:hover{
+  color: #008080;
+}
+
+/* --------------------- dsc card comp ---------------------- */
+.dsc-parent{
+  padding-right: 2%;
+  padding-bottom: 4%;
+}
+.dsc-img{
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 3px #ccc;
+  border-radius: 5px;
+}
+.dsc-img img{
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: 2s ease-in-out;
+}
+.dsc-img img:hover{
+  transform: scale(1.5);
+}
+
+.dsc-h1{
+  color:  #143a56;
+  font-size: 20px;
+  margin-top: 3%;
+  font-family: 'Lato', sans-serif;
+}
+
+.dsc-h2{
+  color:  #606060;
+  font-size: 14px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --------------------- skills ------------------------------ */
+
+.skl-h{
+  color: #606060;
+  text-align: center;
+  padding-top: 3%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+.skl-inner{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skl-box{
+  border-radius: 50% 50%;
+  margin:0 3%;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skl-icon{
+  cursor: pointer;
+  font-size: 60px;
+  color:#606060 ;
+  transition: ease-in-out 1s ease;
+}
+.skl-icon:hover{
+  color: #008080;
+}
+.skl-text{
+  font-family: 'Roboto', sans-serif;
+  color: #008080;
+}
+
+@media screen and (max-width:599px){
+
+}
+
+/* --------------------- about desc --------------------------- */
+.abt-parent{
+  width: 70%;
+  margin: 3% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.abt-left{
+  flex-basis: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abt-img{
+  width: 400px;
+  height: auto;
+}
+.abt-right{
+  padding-left: 1%;
+  flex-basis: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.abt-right-inner{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #008080;
+  font-size: 18px;
+}
+
+@media screen and (min-width:850px) and (max-width:1199px){
+  .abt-parent{
+    width: 90%;
+  }
+  .abt-img{
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:849px){
+    .abt-parent{
+      width: 95%;
+      min-height: 250px;
+    }
+    .abt-img{
+      width: 180px;
+      height: auto;
+    }
+    .abt-right-inner{
+      font-size: 12px;
+    } 
+}
+
+@media screen and (max-width:599px){
+  .abt-parent{
+    width: 100%;
+    margin: 2% auto;
+    flex-wrap: wrap;
+    min-height: 200px;
+  }
+  .abt-img{
+    width: 200px;
+  }
+  .abt-right{
+    padding-left: 0%;
+    padding-top: 2%;
+    flex-basis: 90%;
+  }
+  .abt-right-inner{
+    width: 100%;
+    font-size: 12px;
+  } 
+}
+/* -------------------- footer ------------------------------- */
+
+.footer-text{
+  font-family: 'Roboto', sans-serif;
+  color:  #606060;
 }
