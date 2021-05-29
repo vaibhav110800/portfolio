@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Heading from '../components/Heading';
-
 import { SiMongodb } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
