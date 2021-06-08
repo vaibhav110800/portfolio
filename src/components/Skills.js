@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SiMongodb } from 'react-icons/si';
-import { GrMysql } from 'react-icons/gr';
+import { FaDatabase } from 'react-icons/fa';
 
 import '../index.css';
 
@@ -54,8 +54,8 @@ function Skills(props) {
                 </div>
 
                 <div className="skl-box">
-                    <div className="skl-icon"><GrMysql /></div>
-                    <div className="skl-text">MySQL</div>
+                    <div className="skl-icon"><FaDatabase /></div>
+                    <div className="skl-text">SQL</div>
                 </div>
 
                 <div className="skl-box">
